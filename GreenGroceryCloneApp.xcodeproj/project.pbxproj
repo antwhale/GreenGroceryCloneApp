@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		F8AEFA932D0D957600CEF595 /* GreenGroceryCloneAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AEFA922D0D957600CEF595 /* GreenGroceryCloneAppApp.swift */; };
-		F8AEFA952D0D957600CEF595 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AEFA942D0D957600CEF595 /* ContentView.swift */; };
+		F8AEFA952D0D957600CEF595 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AEFA942D0D957600CEF595 /* SignUpView.swift */; };
 		F8AEFA972D0D957700CEF595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8AEFA962D0D957700CEF595 /* Assets.xcassets */; };
 		F8AEFA9A2D0D957700CEF595 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8AEFA992D0D957700CEF595 /* Preview Assets.xcassets */; };
 		F8AEFAA42D0D957700CEF595 /* GreenGroceryCloneAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AEFAA32D0D957700CEF595 /* GreenGroceryCloneAppTests.swift */; };
 		F8AEFAAE2D0D957700CEF595 /* GreenGroceryCloneAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AEFAAD2D0D957700CEF595 /* GreenGroceryCloneAppUITests.swift */; };
 		F8AEFAB02D0D957700CEF595 /* GreenGroceryCloneAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AEFAAF2D0D957700CEF595 /* GreenGroceryCloneAppUITestsLaunchTests.swift */; };
+		F8AEFABE2D0D964000CEF595 /* ColorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AEFABD2D0D964000CEF595 /* ColorCodes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		F8AEFA8F2D0D957600CEF595 /* GreenGroceryCloneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenGroceryCloneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8AEFA922D0D957600CEF595 /* GreenGroceryCloneAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenGroceryCloneAppApp.swift; sourceTree = "<group>"; };
-		F8AEFA942D0D957600CEF595 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F8AEFA942D0D957600CEF595 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		F8AEFA962D0D957700CEF595 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8AEFA992D0D957700CEF595 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F8AEFA9F2D0D957700CEF595 /* GreenGroceryCloneAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenGroceryCloneAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,7 @@
 		F8AEFAA92D0D957700CEF595 /* GreenGroceryCloneAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenGroceryCloneAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8AEFAAD2D0D957700CEF595 /* GreenGroceryCloneAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenGroceryCloneAppUITests.swift; sourceTree = "<group>"; };
 		F8AEFAAF2D0D957700CEF595 /* GreenGroceryCloneAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenGroceryCloneAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F8AEFABD2D0D964000CEF595 /* ColorCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCodes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		F8AEFA862D0D957600CEF595 = {
 			isa = PBXGroup;
 			children = (
+				F8AEFABC2D0D962B00CEF595 /* Models */,
 				F8AEFA912D0D957600CEF595 /* GreenGroceryCloneApp */,
 				F8AEFAA22D0D957700CEF595 /* GreenGroceryCloneAppTests */,
 				F8AEFAAC2D0D957700CEF595 /* GreenGroceryCloneAppUITests */,
@@ -95,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				F8AEFA922D0D957600CEF595 /* GreenGroceryCloneAppApp.swift */,
-				F8AEFA942D0D957600CEF595 /* ContentView.swift */,
+				F8AEFA942D0D957600CEF595 /* SignUpView.swift */,
 				F8AEFA962D0D957700CEF595 /* Assets.xcassets */,
 				F8AEFA982D0D957700CEF595 /* Preview Content */,
 			);
@@ -125,6 +128,14 @@
 				F8AEFAAF2D0D957700CEF595 /* GreenGroceryCloneAppUITestsLaunchTests.swift */,
 			);
 			path = GreenGroceryCloneAppUITests;
+			sourceTree = "<group>";
+		};
+		F8AEFABC2D0D962B00CEF595 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F8AEFABD2D0D964000CEF595 /* ColorCodes.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8AEFA952D0D957600CEF595 /* ContentView.swift in Sources */,
+				F8AEFABE2D0D964000CEF595 /* ColorCodes.swift in Sources */,
+				F8AEFA952D0D957600CEF595 /* SignUpView.swift in Sources */,
 				F8AEFA932D0D957600CEF595 /* GreenGroceryCloneAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
