@@ -8,18 +8,11 @@
 import SwiftUI
 
 struct SignUpView: View {
-    @State var username: String = ""
-    var usernameerror = "Required"
     
-    @State var email: String = ""
-    var emailError: String = "Required"
-    
-    @State var password: String = ""
-    var passwordError: String = "Required"
-    
-    @State var confirmPassword: String = ""
-    var confirmPasswordError: String = "Required"
-    
+    @ObservedObject private var viewModel: SignUpViewModel
+    init(viewModel: SignUpViewModel) {
+        self.viewModel = viewModel
+    }
     
     var body: some View {
         ZStack {
@@ -30,13 +23,13 @@ struct SignUpView: View {
                     .foregroundColor(Color.white)
                     .padding(.bottom, 20.0)
                 
-                AuthTextField(title: "Username", textValue: $username, errorValue: usernameerror)
+                AuthTextField(title: "Username", textValue: $viewModel.username, errorValue: viewModel.usernamEerror)
                 
-                AuthTextField(title: "Email", textValue: $email, errorValue: emailError, keyboardType: .emailAddress)
+                AuthTextField(title: "Email", textValue: $viewModel.email, errorValue: viewModel.emailError, keyboardType: .emailAddress)
 
-                AuthTextField(title: "Password", textValue: $password, errorValue: passwordError, isSecured: true)
+                AuthTextField(title: "Password", textValue: $viewModel.password, errorValue: viewModel.passwordError, isSecured: true)
                 
-                AuthTextField(title: "Confirm Password", textValue: $confirmPassword, errorValue: confirmPasswordError, isSecured: true)
+                AuthTextField(title: "Confirm Password", textValue: $viewModel.confirmPassword, errorValue: viewModel.confirmPasswordError, isSecured: true)
                 
                 Button(action: {
                     signUp()
@@ -73,7 +66,7 @@ extension ColorCodes {
 }
 
 #Preview {
-    SignUpView()
+    SignUpView(viewModel: SignUpViewModel())
 }
 
 struct AuthTextField: View {

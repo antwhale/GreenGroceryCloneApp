@@ -11,7 +11,8 @@ import SwiftUI
 struct GreenGroceryCloneAppApp: App {
     var body: some Scene {
         WindowGroup {
-            SignUpView()
+            let viewModel = SignUpViewModel()
+            SignUpView(viewModel: viewModel)
         }
     }
 }
