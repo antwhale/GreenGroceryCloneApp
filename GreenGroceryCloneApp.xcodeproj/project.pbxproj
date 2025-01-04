@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F84877B42D16E8FE00760730 /* AuthHttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84877B32D16E8FE00760730 /* AuthHttpRouter.swift */; };
+		F84877B82D16EDE200760730 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F84877B72D16EDE200760730 /* Alamofire */; };
+		F84877BA2D16EE1400760730 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84877B92D16EE1400760730 /* AuthModel.swift */; };
+		F84877BC2D16EEB800760730 /* HttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84877BB2D16EEB800760730 /* HttpRouter.swift */; };
+		F84877BE2D16F04F00760730 /* AuthHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84877BD2D16F04F00760730 /* AuthHttpService.swift */; };
+		F84877C02D16F0F200760730 /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84877BF2D16F0F200760730 /* HttpService.swift */; };
+		F84877C22D16FA4900760730 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84877C12D16FA4900760730 /* AuthAPI.swift */; };
+		F84877C42D16FB7D00760730 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84877C32D16FB7D00760730 /* AuthService.swift */; };
+		F8926C2F2D16FDC3005D5430 /* AuthServiceParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8926C2E2D16FDC3005D5430 /* AuthServiceParsable.swift */; };
+		F8926C332D17009F005D5430 /* TokenResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8926C322D17009F005D5430 /* TokenResponseModel.swift */; };
+		F8926C352D17026C005D5430 /* SignUpErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8926C342D17026C005D5430 /* SignUpErrorModel.swift */; };
 		F8AEFA932D0D957600CEF595 /* GreenGroceryCloneAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AEFA922D0D957600CEF595 /* GreenGroceryCloneAppApp.swift */; };
 		F8AEFA952D0D957600CEF595 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AEFA942D0D957600CEF595 /* SignUpView.swift */; };
 		F8AEFA972D0D957700CEF595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8AEFA962D0D957700CEF595 /* Assets.xcassets */; };
@@ -36,6 +47,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F84877B32D16E8FE00760730 /* AuthHttpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHttpRouter.swift; sourceTree = "<group>"; };
+		F84877B92D16EE1400760730 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		F84877BB2D16EEB800760730 /* HttpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRouter.swift; sourceTree = "<group>"; };
+		F84877BD2D16F04F00760730 /* AuthHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHttpService.swift; sourceTree = "<group>"; };
+		F84877BF2D16F0F200760730 /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
+		F84877C12D16FA4900760730 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
+		F84877C32D16FB7D00760730 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		F8926C2E2D16FDC3005D5430 /* AuthServiceParsable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceParsable.swift; sourceTree = "<group>"; };
+		F8926C322D17009F005D5430 /* TokenResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenResponseModel.swift; sourceTree = "<group>"; };
+		F8926C342D17026C005D5430 /* SignUpErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpErrorModel.swift; sourceTree = "<group>"; };
 		F8AEFA8F2D0D957600CEF595 /* GreenGroceryCloneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenGroceryCloneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8AEFA922D0D957600CEF595 /* GreenGroceryCloneAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenGroceryCloneAppApp.swift; sourceTree = "<group>"; };
 		F8AEFA942D0D957600CEF595 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -55,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F84877B82D16EDE200760730 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,15 +97,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F84877B22D16E8EF00760730 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F84877B32D16E8FE00760730 /* AuthHttpRouter.swift */,
+				F84877BB2D16EEB800760730 /* HttpRouter.swift */,
+				F84877BD2D16F04F00760730 /* AuthHttpService.swift */,
+				F84877BF2D16F0F200760730 /* HttpService.swift */,
+				F84877C12D16FA4900760730 /* AuthAPI.swift */,
+				F84877C32D16FB7D00760730 /* AuthService.swift */,
+				F8926C2E2D16FDC3005D5430 /* AuthServiceParsable.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F84877B62D16EDE200760730 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F8AEFA862D0D957600CEF595 = {
 			isa = PBXGroup;
 			children = (
+				F84877B22D16E8EF00760730 /* Service */,
 				F8AEFABF2D0DBDDD00CEF595 /* ViewModels */,
 				F8AEFABC2D0D962B00CEF595 /* Models */,
 				F8AEFA912D0D957600CEF595 /* GreenGroceryCloneApp */,
 				F8AEFAA22D0D957700CEF595 /* GreenGroceryCloneAppTests */,
 				F8AEFAAC2D0D957700CEF595 /* GreenGroceryCloneAppUITests */,
 				F8AEFA902D0D957600CEF595 /* Products */,
+				F84877B62D16EDE200760730 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +182,9 @@
 			isa = PBXGroup;
 			children = (
 				F8AEFABD2D0D964000CEF595 /* ColorCodes.swift */,
+				F84877B92D16EE1400760730 /* AuthModel.swift */,
+				F8926C322D17009F005D5430 /* TokenResponseModel.swift */,
+				F8926C342D17026C005D5430 /* SignUpErrorModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -165,6 +213,9 @@
 			dependencies = (
 			);
 			name = GreenGroceryCloneApp;
+			packageProductDependencies = (
+				F84877B72D16EDE200760730 /* Alamofire */,
+			);
 			productName = GreenGroceryCloneApp;
 			productReference = F8AEFA8F2D0D957600CEF595 /* GreenGroceryCloneApp.app */;
 			productType = "com.apple.product-type.application";
@@ -237,6 +288,9 @@
 				Base,
 			);
 			mainGroup = F8AEFA862D0D957600CEF595;
+			packageReferences = (
+				F84877B52D16EDC300760730 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = F8AEFA902D0D957600CEF595 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -281,8 +335,18 @@
 			files = (
 				F8AEFABE2D0D964000CEF595 /* ColorCodes.swift in Sources */,
 				F8AEFA952D0D957600CEF595 /* SignUpView.swift in Sources */,
+				F8926C332D17009F005D5430 /* TokenResponseModel.swift in Sources */,
+				F84877B42D16E8FE00760730 /* AuthHttpRouter.swift in Sources */,
+				F84877BE2D16F04F00760730 /* AuthHttpService.swift in Sources */,
 				F8AEFAC12D0DBDF000CEF595 /* SignUpViewModel.swift in Sources */,
+				F84877C42D16FB7D00760730 /* AuthService.swift in Sources */,
+				F84877C02D16F0F200760730 /* HttpService.swift in Sources */,
+				F84877C22D16FA4900760730 /* AuthAPI.swift in Sources */,
 				F8AEFA932D0D957600CEF595 /* GreenGroceryCloneAppApp.swift in Sources */,
+				F8926C352D17026C005D5430 /* SignUpErrorModel.swift in Sources */,
+				F8926C2F2D16FDC3005D5430 /* AuthServiceParsable.swift in Sources */,
+				F84877BA2D16EE1400760730 /* AuthModel.swift in Sources */,
+				F84877BC2D16EEB800760730 /* HttpRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +676,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F84877B52D16EDC300760730 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F84877B72D16EDE200760730 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F84877B52D16EDC300760730 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F8AEFA872D0D957600CEF595 /* Project object */;
 }
